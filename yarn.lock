@@ -1100,7 +1100,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ethersproject/web@npm:5.5.1, @ethersproject/web@npm:^5.5.0":
+"@ethersproject/web@npm:5.5.1, @ethersproject/web@npm:^5.5.0, @ethersproject/web@npm:^5.5.1":
   version: 5.5.1
   resolution: "@ethersproject/web@npm:5.5.1"
   dependencies:
@@ -1164,7 +1164,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@liquality/client@workspace:packages/client"
   dependencies:
+    "@ethersproject/logger": ^5.5.0
     "@ethersproject/sha2": ^5.5.0
+    "@ethersproject/web": ^5.5.1
     "@liquality/types": "workspace:*"
     "@liquality/utils": "workspace:*"
     axios: ^0.25.0

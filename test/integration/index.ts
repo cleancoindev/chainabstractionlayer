@@ -1,8 +1,8 @@
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import { shouldBehaveLikeEvmClient } from './clients/evm';
-import { shouldBehaveLikeNearClient } from './clients/near';
+// import { shouldBehaveLikeEvmClient } from './clients/evm';
+// import { shouldBehaveLikeNearClient } from './clients/near';
 import { shouldBehaveLikeBitcoinClient } from './clients/bitcoin';
 import { startLocalNetworks, stopLocalNetworks } from './environment';
 
@@ -14,8 +14,8 @@ describe('Integration tests', function () {
     });
 
     describe('Clients', () => {
-        shouldBehaveLikeEvmClient();
-        shouldBehaveLikeNearClient();
+        // shouldBehaveLikeEvmClient();
+        // shouldBehaveLikeNearClient();
         shouldBehaveLikeBitcoinClient();
     });
 

@@ -23,6 +23,7 @@ export interface IConfig {
 }
 
 export enum ChainType {
+    btc = 'btc',
     evm = 'evm',
     near = 'near',
 }

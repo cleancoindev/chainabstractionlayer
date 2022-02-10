@@ -5,11 +5,17 @@ import { sha256 } from '@liquality/utils';
 import { Client } from '@liquality/client';
 import { FeeData, SwapParams, Transaction } from '@liquality/types';
 import { expect } from 'chai';
-import { EthereumClient, NearClient } from './clients';
+import { BitcoinClient, EthereumClient, NearClient } from './clients';
 import { EVMConfig, NearConfig } from './config';
 import { Chain, ChainType, IConfig } from './types';
 
 export const Chains: { [key in ChainType]: Chain } = {
+    [ChainType.btc]: {
+        id: 'BTC',
+        name: 'btc',
+        config: null,
+        client: BitcoinClient,
+    },
     [ChainType.evm]: {
         id: 'EVM',
         name: 'evm',
