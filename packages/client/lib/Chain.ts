@@ -37,7 +37,7 @@ export default abstract class Chain<T> {
 
     public abstract getBalance(addresses: AddressType[], assets: Asset[]): Promise<BigNumberish[]>;
 
-    public abstract getFees(): Promise<FeeData>;
+    public abstract getFees(asset?: Asset): Promise<FeeData>;
 
     public abstract sendRawTransaction(rawTransaction: string): Promise<string>;
 

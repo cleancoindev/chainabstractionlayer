@@ -22,6 +22,12 @@ export const Chains: { [key in ChainType]: Chain } = {
         config: NearConfig(NearNetworks.near_testnet),
         client: NearClient,
     },
+    [ChainType.terra]: {
+        id: 'Terra',
+        name: 'terra',
+        config: NearConfig(NearNetworks.near_testnet),
+        client: NearClient,
+    },
 };
 
 export async function getSwapParams(client: Client, config: IConfig, expiryInSeconds = 200, native = true) {

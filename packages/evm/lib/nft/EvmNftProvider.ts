@@ -20,7 +20,7 @@ export class EvmNftProvider extends Nft<BaseProvider, Signer> {
     private _schemas: Record<string, NftContract>;
     private _httpClient: HttpClient;
 
-    constructor(walletProvider: EvmBaseWalletProvider<BaseProvider>, httpConfig: ClientTypes.AxiosRequestConfig) {
+    constructor(walletProvider: EvmBaseWalletProvider<BaseProvider, Signer>, httpConfig: ClientTypes.AxiosRequestConfig) {
         super(walletProvider);
 
         this._erc721 = ERC721__factory.connect(AddressZero, this.walletProvider.getSigner());

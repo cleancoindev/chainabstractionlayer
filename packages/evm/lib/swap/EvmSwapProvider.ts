@@ -6,11 +6,12 @@ import { BigNumberish, SwapParams, Transaction } from '@liquality/types';
 import { EvmBaseSwapProvider } from './EvmBaseSwapProvider';
 import { EvmBaseWalletProvider } from '../wallet/EvmBaseWalletProvider';
 import { ClaimEvent, InitiateEvent, RefundEvent } from '../typechain/LiqualityHTLC';
+import { Signer } from 'ethers';
 
 export class EvmSwapProvider extends EvmBaseSwapProvider {
-    protected walletProvider: EvmBaseWalletProvider<BaseProvider>;
+    protected walletProvider: EvmBaseWalletProvider<BaseProvider, Signer>;
 
-    constructor(swapOptions: any, walletProvider: EvmBaseWalletProvider<BaseProvider>) {
+    constructor(swapOptions: any, walletProvider: EvmBaseWalletProvider<BaseProvider, Signer>) {
         super(swapOptions, walletProvider);
     }
 

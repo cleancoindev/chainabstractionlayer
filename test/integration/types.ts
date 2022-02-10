@@ -25,6 +25,7 @@ export interface IConfig {
 export enum ChainType {
     evm = 'evm',
     near = 'near',
+    terra = 'terra',
 }
 
 export interface Chain {

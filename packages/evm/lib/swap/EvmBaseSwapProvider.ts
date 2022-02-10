@@ -12,10 +12,10 @@ import { EvmBaseWalletProvider } from '../wallet/EvmBaseWalletProvider';
 import { InitiateEvent, ClaimEvent, RefundEvent } from '../typechain/LiqualityHTLC';
 
 export abstract class EvmBaseSwapProvider extends Swap<BaseProvider, Signer> {
-    protected walletProvider: EvmBaseWalletProvider<BaseProvider>;
+    protected walletProvider: EvmBaseWalletProvider<BaseProvider, Signer>;
     protected contract: LiqualityHTLC;
 
-    constructor(swapOptions: any, walletProvider?: EvmBaseWalletProvider<BaseProvider>) {
+    constructor(swapOptions: any, walletProvider?: EvmBaseWalletProvider<BaseProvider, Signer>) {
         super(walletProvider);
 
         if (walletProvider) {
