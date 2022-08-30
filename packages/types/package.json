@@ -22,7 +22,7 @@
     "node": "^14.18.1"
   },
   "dependencies": {
-    "bignumber.js": "^9.0.1"
+    "bignumber.js": "^9.1.0"
   },
   "homepage": "https://github.com/liquality/chainabstractionlayer#readme",
   "repository": {
