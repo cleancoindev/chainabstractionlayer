@@ -26,7 +26,7 @@
     "@liquality/types": "^1.13.5",
     "@liquality/utils": "^1.13.5",
     "@types/luxon": "^1.27.1",
-    "luxon": "^2.0.1"
+    "luxon": "^2.5.2"
   },
   "homepage": "https://github.com/liquality/chainabstractionlayer#readme",
   "repository": {
